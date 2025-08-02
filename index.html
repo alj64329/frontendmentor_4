@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -15,19 +16,60 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Support</a></li>
-    </ul>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="/images/logo.svg" alt="Logo">
+        </div>
+        <div class="navbar-container">
+            <nav class="nav-links desktop-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-li"><a href="#">Careers</a>
+                    </li>
+                    <li class="nav-li"><a href="#">Events</a>
+                    </li>
+                    <li class="nav-li"><a href="#">Products</a>
+                    </li>
+                    <li class="nav-li"><a href="#">Support</a>
+                </ul>
+            </nav>
+            <nav class="nav-links hamburger-nav">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <img src="/images/icon-hamburger.svg" alt="hamburger-menu" onclick="toggleMenu()">
+                    </div>
+                </div>
+                <ul class="hamburger-links">
+                    <li>
+                        <a href="#home" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick="toggleMenu()">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#skill" onclick="toggleMenu()">Events</a>
+                    </li>
+                    <li><a href="#project" onclick="toggleMenu()">Products</a>
+                    </li>
+                    <li><a href="#experience" onclick="toggleMenu()">Support</a>
+                </ul>
+            </nav>
+        </div>
+      </div>
   </header>
+
 
 <!-- Hero section -->
   <section class="hero-section">
     <div>
+      <div class="hero-img">
+        <img src="/images/mobile/image-hero.jpg" alt="Hero image" class="hero-img-mobile">
+        <img src="/images/desktop/image-hero.jpg" alt="Hero image" class="hero-img-desktop">
+      </div>
       <div class="hero-section-text">
         Immersive experiences that deliver
       </div>
@@ -38,7 +80,10 @@
   <!-- Intoroduction -->
   <section class="intro-section">
     <!-- intro Img -->
-    <div class="intro-img-container">
+    <div class="intro-img-container intro-mobile">
+      <img src="/images/mobile/image-interactive.jpg" alt="Interactive Image">
+    </div>
+    <div class="intro-img-container intro-desktop">
       <img src="/images/desktop/image-interactive.jpg" alt="Interactive Image">
     </div>
 
@@ -58,36 +103,74 @@
   <section class="creation-section">
     <div>
       <h2>Our creations</h2>
-    </div>
 
-    <div class="link-container">
-      <!-- Deep Earth -->
-      <div class="deep-earth">
+      <div>
+        <!-- Mobile -->
+        <div class=" link-container creation-img-mobile">
+          <div class="creation-img">
+            <img src="/images/mobile/image-deep-earth.jpg" alt="Deep Earth">
+            <div class="img-name">Deep Earth</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-night-arcade.jpg" alt="Night Arcade">
+            <div class="img-name">Night Arcade</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-soccer-team.jpg" alt="Soccer Team VR">
+            <div class="img-name">Soccer team vr</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-grid.jpg" alt="Grid">
+            <div class="img-name">The grid</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-from-above.jpg" alt="From Aboce">
+            <div class="img-name">from up above vr</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis">
+            <div class="img-name">pocket borealis</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-curiosity.jpg" alt="The Curiosity">
+            <div class="img-name">The curiosity</div>
+          </div>
+          <div class="creation-img">
+            <img src="/images/mobile/image-fisheye.jpg" alt="Fisheye">
+            <div class="img-name">Make it fisheye</div>
+          </div>
+        </div>
+        
+        <!-- Desktop -->
+        <div class="link-container creation-img-desktop">
+          <!-- Deep Earth -->
+          <div class="deep-earth creation-img">
+          </div>
+          <!-- Night arcade -->
+          <div class="night-arcade">
+          </div>
+          <!-- Soccer team VR -->
+          <div class="soccer-team-vr">
+          </div>
+          <!-- The Grid -->
+          <div class="the-grid">
+          </div>
+          <!-- From up above VR -->
+          <div class="from-up-above-vr">
+          </div>
+          <!-- Pocket borealis -->
+          <div class="poket borealis">
+          </div>
+          <!-- The curiosity -->
+          <div class="the-curiosity">
+          </div>
+          <!-- Make it fisheye -->
+          <div class="make-it-fisheye">
+          </div>
+        </div>
       </div>
-      <!-- Night arcade -->
-      <div class="night-arcade">
-      </div>
-      <!-- Soccer team VR -->
-      <div class="soccer-team-vr">
-      </div>
-      <!-- The Grid -->
-      <div class="the-grid">
-      </div>
-      <!-- From up above VR -->
-      <div class="from-up-above-vr">
-      </div>
-      <!-- Pocket borealis -->
-      <div class="poket borealis">
-      </div>
-      <!-- The curiosity -->
-      <div class="the-curiosity">
-      </div>
-      <!-- Make it fisheye -->
-      <div class="make-it-fisheye">
-      </div>
-    </div>
 
-    <div>
+    <div class="btn-container">
       <button>See All</button>
     </div>
   </section>
@@ -122,5 +205,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/js/script.js"></script>
 </body>
 </html>

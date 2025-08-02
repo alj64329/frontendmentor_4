@@ -1,0 +1,51 @@
+.hero-section{
+
+    img{
+        width: 100%;
+        position: relative;
+        top: 0;
+        z-index: 0;
+
+        &.hero-img-mobile{
+            visibility: visible;
+        }
+
+        &.hero-img-desktop{
+            visibility: hidden;
+            height: 0px;
+            width: 0px;
+        }
+
+        @media screen and (min-width:700px) {
+            &.hero-img-mobile{
+                visibility: hidden;
+                height: 0px;
+                width: 0px;
+            }
+
+            &.hero-img-desktop{
+                visibility: visible;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+
+    .hero-section-text{
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 10%;
+        color: white;
+        text-transform: uppercase;
+        padding: 1.5rem 2rem;
+        border: 1px solid white;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 45px;
+
+        @media screen and (min-width:700px) {
+        }
+    }
+}

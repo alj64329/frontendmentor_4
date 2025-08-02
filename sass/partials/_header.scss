@@ -1,0 +1,30 @@
+.header-container{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 100vw;
+    
+    .navbar-container{
+        .desktop-nav{
+            visibility: hidden;
+            height: 0px;
+        }
+
+        .hamburger-links{
+            visibility: hidden;
+            height: 0px;
+
+            & .open{
+                background-color: black;
+                visibility: visible;
+                height: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width:700px) {
+    }
+}
