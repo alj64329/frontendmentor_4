@@ -8,23 +8,21 @@
 
         &.hero-img-mobile{
             visibility: visible;
+            display: block;
         }
 
         &.hero-img-desktop{
-            visibility: hidden;
-            height: 0px;
-            width: 0px;
+            display: none;
         }
 
-        @media screen and (min-width:700px) {
+        @media screen and (min-width:800px) {
             &.hero-img-mobile{
-                visibility: hidden;
-                height: 0px;
-                width: 0px;
+                display: none;
             }
 
             &.hero-img-desktop{
                 visibility: visible;
+                display: block;
                 width: 100%;
                 height: auto;
             }
@@ -40,12 +38,29 @@
         color: white;
         text-transform: uppercase;
         padding: 1.5rem 2rem;
-        border: 1px solid white;
         font-family: "Josefin Sans", sans-serif;
         font-weight: 300;
         font-size: 45px;
 
-        @media screen and (min-width:700px) {
+        &::before{
+            content: "";
+            border: 1px solid white;
+            width: 100%;
+            padding: 1.5rem;
+            height: 75%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (min-width:800px) {
+            width: 40%;
+            top: 35%;
+            font-size: 55px;
+
+            &::before{
+                width: 90%;
+            }
         }
     }
 }
