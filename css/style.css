@@ -86,7 +86,7 @@ body {
 .hero-section img.hero-img-desktop {
   display: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hero-section img.hero-img-mobile {
     display: none;
   }
@@ -100,7 +100,7 @@ body {
 .hero-section .hero-section-text {
   position: absolute;
   width: 60%;
-  top: 50%;
+  top: 70%;
   left: 10%;
   color: white;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ body {
   top: 0;
   left: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hero-section .hero-section-text {
     width: 40%;
     top: 35%;
@@ -141,7 +141,7 @@ body {
 .intro-section .intro-mobile img {
   width: 100%;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .intro-section .intro-mobile {
     padding: 0;
     display: none;
@@ -150,13 +150,13 @@ body {
 .intro-section .intro-desktop {
   display: none;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .intro-section .intro-desktop {
     visibility: visible;
     display: block;
   }
   .intro-section .intro-desktop img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 }
@@ -175,22 +175,22 @@ body {
   line-height: 150%;
   color: hsl(0, 0%, 85%);
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .intro-section .intro-text-container {
     width: 45%;
     position: absolute;
     background-color: white;
     bottom: 0;
-    right: 100px;
+    right: 0;
     padding: 6rem 5rem 4rem 5rem;
     text-align: start;
   }
   .intro-section .intro-text-container .intro-text {
-    font-size: 15px;
+    font-size: 10px;
     padding-top: 1rem;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .intro-section {
     display: flex;
     position: relative;
@@ -209,7 +209,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .creation-section h2 {
     order: 1;
   }
@@ -253,7 +253,7 @@ body {
 .creation-section div.links-container .creation-img-mobile .creation-img .img-name.deep-earth-text, .creation-section div.links-container .creation-img-mobile .creation-img .img-name.the-grid-text {
   width: 0%;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .creation-section div.links-container .creation-img-mobile {
     display: none;
   }
@@ -261,25 +261,30 @@ body {
 .creation-section div.links-container .creation-img-desktop {
   display: none;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .creation-section div.links-container .creation-img-desktop {
-    visibility: visible;
-    height: 100%;
     width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0 auto;
   }
   .creation-section div.links-container .creation-img-desktop .creation-img {
     position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .creation-section div.links-container .creation-img-desktop .creation-img img {
+    width: 90%;
+    height: 99%;
   }
   .creation-section div.links-container .creation-img-desktop .creation-img::before {
     content: "";
     position: absolute;
     height: 99%;
+    width: 90%;
     top: 0;
-    left: 0;
+    left: 5%;
     right: 0;
     bottom: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
@@ -293,7 +298,7 @@ body {
     position: absolute;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
-    top: 80%;
+    top: 70%;
     width: 50%;
     left: 5%;
     z-index: 2;
@@ -302,12 +307,21 @@ body {
     width: 70%;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .creation-section div.links-container {
     padding: 5rem 0;
     order: 3;
     grid-column: 1/span 2;
   }
+}
+.creation-section div.links-container .link-container .creation-img:hover {
+  cursor: pointer;
+}
+.creation-section div.links-container .link-container .creation-img:hover::before {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.creation-section div.links-container .link-container .creation-img:hover .img-name {
+  color: black;
 }
 .creation-section .btn-container {
   display: flex;
@@ -321,12 +335,17 @@ body {
   font-size: 16px;
   letter-spacing: 3px;
 }
-@media screen and (min-width: 1100px) {
+.creation-section .btn-container button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
   .creation-section .btn-container {
     order: 2;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .creation-section {
     margin: 5rem 0;
     display: grid;
