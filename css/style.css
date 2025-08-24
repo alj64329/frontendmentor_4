@@ -36,6 +36,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
   padding: 15rem 1rem;
   list-style: none;
 }
@@ -66,10 +67,17 @@ body {
     color: white;
     text-decoration: none;
   }
+  .header-container .navbar-container nav.desktop-nav .nav-ul .nav-li:hover a::after {
+    content: "";
+    display: block;
+    width: 25px;
+    border-bottom: solid 2px white;
+    margin: 0.2rem auto;
+  }
 }
 @media screen and (min-width: 800px) {
   .header-container {
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
@@ -373,9 +381,23 @@ footer .footer-menu li a {
   text-decoration: none;
   color: white;
 }
+footer .footer-menu li:hover a::after {
+  content: "";
+  display: block;
+  width: 25px;
+  border-bottom: solid 2px white;
+  margin: 0.2rem auto;
+}
 footer .icon-container {
   display: flex;
   gap: 1rem;
+}
+footer .icon-container a:hover::after {
+  content: "";
+  display: block;
+  width: 15px;
+  border-bottom: solid 2px white;
+  margin: 0.2rem auto;
 }
 footer .copyright-text {
   padding: 1rem;

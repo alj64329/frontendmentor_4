@@ -15,12 +15,28 @@ footer{
                 text-decoration: none;
                 color: white;
             }
+            
+            &:hover a::after{
+                content: "";
+                display: block;
+                width: 25px;
+                border-bottom: solid 2px white;
+                margin: 0.2rem auto;
+            }
         }
     }
 
     .icon-container{
         display: flex;
         gap:1rem;
+
+        a:hover::after{
+            content: "";
+            display: block;
+            width: 15px;
+            border-bottom: solid 2px white; 
+            margin: 0.2rem auto;
+        }
     }
 
     .copyright-text{

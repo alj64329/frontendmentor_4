@@ -26,6 +26,7 @@
                 top: 0;
                 left: 0;
                 width: 100vw;
+                height: 100vh;
                 padding: 15rem 1rem;
                 list-style: none;
 
@@ -62,13 +63,23 @@
                         text-decoration: none;
                     }
 
+                    .nav-li:hover a::after{
+                        content: "";
+                        display: block;
+                        width: 25px;
+                        border-bottom: solid 2px white;
+                        margin: 0.2rem auto;
+                    }
+
                 }
             }
         }
     }
 
+
+
     @media screen and (min-width: 800px) {
-        padding: 4rem;
+        padding: 2rem;
         
     }
 }
